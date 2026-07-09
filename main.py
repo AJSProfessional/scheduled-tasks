@@ -4,7 +4,7 @@ from random import randint
 import os
 # 1. Update the birthdays.csv
 MY_EMAIL = os.environ.get("MY_EMAIL")
-PASSWORD = os.environ.get("PASSWORD")
+PASSWORD = os.environ.get("MY_PASSWORD")
 # 2. Check if today matches a birthday in the birthdays.csv
 now = dt.datetime.now()
 birthdays = pd.read_csv("birthdays.csv")
